@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "489255261791",
+    "project_id": "naturalreport2"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489255261791:android:b0b0b8dc31a47bb2",
+        "android_client_info": {
+          "package_name": "com.example.gerar.naturereport20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489255261791-cuhmsuqcp20dik2mvjg10h5qqgae4p6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gerar.naturereport20",
+            "certificate_hash": "92A5345A0D81FE2F29F7C2E49742254DD712F612"
+          }
+        },
+        {
+          "client_id": "489255261791-tibnhsu3536fiib0gehabvpkpqms2mbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLPgLfryCoKe7L3hupDVFL_rbjt-wdBzs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
