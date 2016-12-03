@@ -10,6 +10,18 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gerar.naturereport20.MainActivity"
     android:background="@drawable/fondo02">
+<<<<<<< HEAD
+=======
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/logo">
+
+    </LinearLayout>
+>>>>>>> 46e751a793ad2fd0ebe13833f9222c397dba003f
 
     <LinearLayout
         android:id="@+id/llProfile"
