@@ -9,16 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.gerar.naturereport20.MainActivity"
-    tools:background="@drawable/fondo02">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:id="@+id/logo">
-
-    </LinearLayout>
+    android:background="@drawable/fondo02">
 
     <LinearLayout
         android:id="@+id/llProfile"
@@ -74,20 +65,96 @@
         android:text="@string/btn_revoke_access"
         android:visibility="gone" />
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/btn_sign_in"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo"
-        android:layout_alignLeft="@+id/llProfile"
-        android:layout_alignStart="@+id/llProfile"
-        android:layout_marginTop="194dp" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="60dp">
 
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="76dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo"
+        <ImageView
+            android:layout_width="156dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivLogo"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/ivLogo"
+            android:background="@android:color/transparent"
+            android:text="Ingresar"
+            android:id="@+id/btnIngresar"
+            tools:textColor="@android:color/black"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_below="@+id/logo"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/google"
+        android:gravity="center">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btn_sign_in"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/google"
+        android:text="Cambiar Usuario"
+        android:id="@+id/btnCambiarUsuario"
+        tools:textColor="@android:color/black"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:text="Politica de Privacidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/checkBox"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/btnCambiarUsuario"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Biohackaton 2016"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/tvBio"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Team UNMSM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUnmsm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black" />
+
 </RelativeLayout>
